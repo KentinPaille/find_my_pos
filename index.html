@@ -9,16 +9,19 @@
     <body>
         <h1>Trouve ma position</h1>
         <input type="text" placeholder="Entrez une valeur ici" id="in">
-        <button type="button" onclick="getValue();">Récupérer la valeur</button>
+        <a id="myLink" title="Click to do something" href="https://www.google.fr/maps/place/49%C2%B014'45.3%22N+4%C2%B001'20.4%22E/@49.2459186,4.0201421,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa940a7285ed2c6f9!8m2!3d49.2459186!4d4.0223308" onclick="return(getValue()?true:false)">go pos</a>
         <script>
+        var test = 57;
         function getValue() {
             // Sélectionner l'élément input et récupérer sa valeur
             var input = document.getElementById("in").value;
             // Afficher la valeur
             if (input != "49.2459186, 4.0223308") {
                 alert("Wrong position");
+                
             } else {
-                alert("good")
+                return (true);
+                
             }
         }
         </script>
