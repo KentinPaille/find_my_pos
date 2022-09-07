@@ -7,9 +7,19 @@
         <title>Find my pos</title>
     </head>
     <body>
-        <h1>Trouve ma position</h1>
-        <input type="text" placeholder="Entrez une valeur ici" id="in">
-        <a id="myLink" title="Click to do something" href="https://www.google.fr/maps/place/49%C2%B014'45.3%22N+4%C2%B001'20.4%22E/@49.2459186,4.0201421,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa940a7285ed2c6f9!8m2!3d49.2459186!4d4.0223308" onclick="return(getValue()?true:false)">go pos</a>
+        <div style="position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: auto;">
+            <h1 style="text-align: center; ">Trouve ma position</h1>
+            <div style="text-align: center;margin-left: auto; margin-right: auto;">
+                <input type="text" placeholder="Entrez une valeur ici" id="in">
+                <button><a id="myLink" title="Click to do something" href="https://www.google.fr/maps/place/49%C2%B014'45.3%22N+4%C2%B001'20.4%22E/@49.2459186,4.0201421,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa940a7285ed2c6f9!8m2!3d49.2459186!4d4.0223308" onclick="return(getValue()?true:false)">go pos</a></button>
+            </div>
+        </div>
+        
         <script>
         var test = 57;
         function getValue() {
@@ -25,5 +35,8 @@
             }
         }
         </script>
+        <style>
+        </style>
     </body>
 </html>
+
