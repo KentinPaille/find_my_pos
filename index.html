@@ -4,8 +4,23 @@
         <meta charset="UTF-8" content>
         <meta http-equiv="Content-Type" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Find my pos</title>
     </head>
     <body>
         <h1>Trouve ma position</h1>
+        <input type="text" placeholder="Entrez une valeur ici" id="in">
+        <button type="button" onclick="getValue();">Récupérer la valeur</button>
+        <script>
+        function getValue() {
+            // Sélectionner l'élément input et récupérer sa valeur
+            var input = document.getElementById("in").value;
+            // Afficher la valeur
+            if (input != "49.2459186, 4.0223308") {
+                alert("Wrong position");
+            } else {
+                alert("good")
+            }
+        }
+        </script>
     </body>
 </html>
